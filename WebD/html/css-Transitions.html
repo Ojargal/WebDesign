@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/BoxenUndContainer.css">
+    <style>
+        /* .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+        .inDieBreite:hover{
+            transition: width 5s;
+            width: 799px;
+        }
+        .inDieBreiteUndInDieHoehe:hover{
+            transition: height 1s, width 1s;
+            width: 50%;
+            height: 50%;
+            background-color: lime;
+        }
+        .inDieHoehe:hover{
+            transition: height 5s;
+            height: 899px;
+            background-color: skyblue;
+        }
+        .sonstiges:hover{
+            /* transition: width 5s; */
+
+            /* Eigenschaft */
+            /* transition-property: width; */
+            /* Dauer */
+            /* transition-duration: 3.5s; */
+            /* Verzögerung */
+            transition-delay: 3s;
+            transition-property: background-color;
+            background-color: blue;
+            width: 799px;
+
+            /* transition-timing-function: ease; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out; */
+
+            transition-timing-function: ease-in-out;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="box inDieBreite"></div> -->
+        <!-- <div class="box inDieHoehe"></div> -->
+        <!-- <div class="box inDieBreiteUndInDieHoehe"></div> -->
+        <div class="box sonstiges"></div>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/BoxenUndContainer.css">
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* .inhalt {
+            display: flex;
+            font: bold 32px verdana;
+            justify-content: center;
+            align-items: center;
+            
+        } */
+        .nachRechts{
+            z-index: 1;
+            margin: 109px;
+            background-color: skyblue;
+        }
+        .G{
+            z-index: 2;
+            margin: -70px;
+            background-color: skyblue;
+        }
+        .box, .G {
+            display: flex;
+            font: bold 45px verdana;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        /* Dreht die Box nach rechts */
+        .nachRechts:hover{
+            transform: rotate(360deg);
+            transition-duration: 5s;
+            background-color: skyblue;
+        }
+        
+        /* Dreht die Box nach links */
+        .nachLinks:hover{
+            transform: rotate(-360deg);
+            transition-duration: 5s;
+            background-color: lime
+        }
+        /* Vergrößern der Box um 2-Fache */
+        .bigger:hover{
+            width: 200px;
+            height: 200px;
+        }
+        /* Vergrößern der Box und des Inhalts um das doppelte */
+        .skalieren_1:hover{
+            transform: scale(2);
+            background-color: maroon;
+            color: gold;
+        }
+
+        /* Vergrößern der Box und des Inhalts um das 2,5 Fache */
+        .skalieren_2:hover{
+            transform: scale(2.5);
+            background-color: lightgreen;
+        }
+
+        /* Vergrößern der Box und des Inhalts in
+            X-Achse um das 2-Fache
+            Y-Achse um das 5-Fache */
+        .skalieren_3:hover{
+            transform: scale(2,5);
+            background-color: navy;
+            color: yellow;
+        }
+        
+        .zerrenNachRechts:hover{
+            transform: skew(-30deg);
+            background-color: lime;
+        }
+        .zerrenNachLinks:hover{
+            transform: skew(30deg);
+            background-color: sienna;
+        }
+
+        .zerrenX-1:hover{
+            transform: skewX(-30deg);
+            background-color: steelblue;
+        }
+        .zerrenX-2:hover{
+            transform: skewX(30deg);
+            background-color: green;
+        }
+
+        .zerrenY-1:hover{
+            transform: skewY(-30deg);
+            background-color: indigo;
+        }
+        .zerrenY-2:hover{
+            transform: skewY(30deg);
+            background-color: cadetblue;
+        }
+        .zerren:hover{
+            transform: skew(0deg, 30deg);
+        }
+
+        .box {
+            padding: 10px;
+            width: fit-content;
+        }
+
+        .verschieben:hover{
+            /* Verschieben nach Links */
+            transform: translateX(-100px);
+
+            /* Verschieben nach Rechts */
+            transform: translateX(100px);
+            
+
+            /* Verschieben nach Unten */
+            transform: translateY(100px);
+
+            /* Verschieben nach Oben */
+            transform: translateY(100px);
+
+
+            /* Verschieben nach Links */
+            transform: translateX(-100px);
+
+            /* Verschieben nach Rechts */
+            transform: translateX(100px);
+            
+
+            /* Verschieben nach Links oben */
+            transform: translate(-100px, -100px);
+
+            /* Verschieben nach Links uben */
+            transform: translate(-100px, 100px);
+
+
+            /* Verschieben nach Rechts oben */
+            transform: translate(100px, -100px);
+
+            /* Verschieben nach Rechts uben */
+            transform: translate(100px, 100px);
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="box nachRechts">
+            </div>
+            <div class="G">G</div>
+        <div class="box nachLinks">
+            <span class="inhalt">S</span>
+            </div>
+        <div class="box bigger" >A</div>
+        <div class="box skalieren_1" >B</div>
+        <div class="box skalieren_2" >C</div>
+        <div class="box skalieren_3" >D</div> -->
+        <!-- <div class="box zerrenNachRechts">-30</div>
+        <div class="box zerrenNachLinks">30</div>
+        <div class="box zerrenX-1">X-1</div>
+        <div class="box zerrenX-2">X-2</div>
+        <div class="box zerrenY-1">Y-1</div>
+        <div class="box zerrenY-2">Y-2</div> -->
+        <div class="box zerren">Zerren</div>
+        <div class="box verschieben">Zerren</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/BoxenUndContainer.css">
+    <style>
+        /* .container, .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .name {
+            animation: colorChange_8 6s infinite;
+        }
+
+        @keyframes colorChange_8 {
+            0% {
+                color: lightpink;
+                transform: rotate(0deg) scale(1);
+            }
+
+            50% {
+                color: blue;
+                transform: rotate(-180deg) scale(2);
+            }
+
+            100% {
+                color: skyblue;
+                transform: rotate(-360deg) scale(1);
+            }
+        }
+
+        .box {
+            animation: colorChange_1 5s infinite;
+            animation: colorChange_2 5s infinite;
+            animation: colorChange_3 6s infinite;
+            animation: colorChange_4 6s infinite;
+            animation: colorChange_5 6s infinite;
+            animation: colorChange_6 60s infinite;
+            animation: colorChange_7 6s infinite;
+
+
+            position: relative;
+
+            animation: vonLinksnachRechts 6s infinite;
+            animation: vOnUuR 6s infinite;
+            animation: diagnolNachRechtsUnten 6s infinite;
+            animation: vonObennachUnten 6s infinite;
+            animation: UhrzeitRichtung 6s infinite;
+
+            /* Name der Animation */
+            animation: AnimazionEinzeln;
+
+            /* Dauer der Animation */
+            animation-duration: 5s;
+
+            /* Startverzögerung */
+            animation-delay: 1s;
+
+            /* Anzahl der Animation */
+            animation-iteration-count: 2;
+
+            /* Richtung der Animation */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+            animation-direction: forwards;
+
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes AnimazionEinzeln {
+            0% {
+                left: 0px;
+            }
+
+            100% {
+                left: 699px;
+            }
+
+        }
+
+
+        @keyframes diagnolNachRechtsUnten {
+
+
+            0% {
+                left: 0px;
+                top: 0px;
+                transform: rotate(0deg);
+                background-color: lightpink;
+
+            }
+
+            50% {
+                left: 699px;
+                top: 799px;
+                transform: rotate(360deg);
+                background-color: chocolate;
+
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+                transform: rotate(720deg);
+                background-color: lightpink;
+
+            }
+
+        }
+
+
+
+        @keyframes diagnolNachRechtsUnten {
+
+
+            0% {
+                left: 0px;
+                top: 0px;
+                transform: rotate(0deg);
+                background-color: lightpink;
+
+            }
+
+            50% {
+                left: 699px;
+                top: 799px;
+                transform: rotate(360deg);
+                background-color: chocolate;
+
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+                transform: rotate(720deg);
+                background-color: lightpink;
+
+            }
+
+        }
+
+        @keyframes diagnolNachRechtsUnten {
+
+
+            0% {
+                left: 0px;
+                top: 0px;
+                transform: rotate(0deg);
+                background-color: lightpink;
+
+            }
+
+            50% {
+                left: 699px;
+                top: 799px;
+                transform: rotate(360deg);
+                background-color: chocolate;
+
+            }
+
+            100% {
+                left: 0px;
+                top: 0px;
+                transform: rotate(720deg);
+                background-color: lightpink;
+
+            }
+
+        }
+
+        @keyframes vOnUuR {
+
+            0%,
+            100% {
+                top: 0px;
+                background-color: lightpink;
+                transform: rotate(0deg);
+            }
+
+            50% {
+                top: 799px;
+                background-color: indigo;
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes vonObennachUnten {
+            0% {
+                top: 0px;
+            }
+
+            100% {
+                top: 799px;
+            }
+
+        }
+
+        @keyframes vonLinksnachRechts {
+            0% {
+                left: 0px;
+            }
+
+            100% {
+                left: 699px;
+            }
+
+        }
+
+        @keyframes UhrzeitRichtung {
+            0%{
+                background-color: lightpink;
+                top: 0px;
+                left: 0px;
+                transform: rotate(0deg) scale(1);
+            }
+            25%{
+                background-color: lightblue;
+                top: 0px;
+                left: 699px;
+                transform: rotate(360deg) scale(2);
+            }
+            50%{
+                background-color: lightgreen;
+                top: 799px;
+                left: 699px;
+                transform: rotate(720deg) scale(1);
+            }
+            75%{
+                background-color: burlywood;
+                top: 799px;
+                left: 0px;
+                transform: rotate(1080deg) scale(2);
+            }
+            100%{
+                background-color: lightpink;
+                top: 0px;
+                left: 0px;
+                transform: rotate(3600deg);
+            }
+        }
+        
+        
+
+        
+
+
+        @keyframes colorChange_7 {
+            0% {
+                background-color: lightpink;
+                transform: rotate(0deg) scale(1);
+            }
+
+            50% {
+                background-color: lime;
+                transform: rotate(180deg) scale(2);
+            }
+
+            100% {
+                background-color: skyblue;
+                transform: rotate(360deg) scale(1);
+            }
+        }
+
+        @keyframes colorChange_6 {
+            0% {
+                background-color: lightpink;
+                transform: rotate(0deg);
+            }
+
+            50% {
+                background-color: lime;
+                transform: rotate(180deg);
+            }
+
+            100% {
+                background-color: skyblue;
+                transform: rotate(360deg);
+            }
+        }
+
+
+        @keyframes colorChange_5 {
+
+            0%,
+            100% {
+                background-color: lightpink;
+            }
+
+            50% {
+                background-color: darkgreen;
+            }
+        }
+
+        @keyframes colorChange_4 {
+            0% {
+                background-color: lightpink;
+            }
+
+            50% {
+                background-color: indigo;
+            }
+
+            100% {
+                background-color: lightpink;
+            }
+        }
+
+        @keyframes colorChange_3 {
+            0% {
+                background-color: lightpink;
+            }
+
+            50% {
+                background-color: lime;
+            }
+
+            100% {
+                background-color: skyblue;
+            }
+        }
+
+        @keyframes colorChange_2 {
+            0% {
+                background-color: lightpink;
+            }
+
+            100% {
+                background-color: lime;
+            }
+        }
+
+        @keyframes colorChange_1 {
+            from {
+                background-color: lightpink;
+            }
+
+            to {
+                background-color: skyblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"><span class="name">Jargal</span></div>
+    </div>
+</body>
+
+</html>

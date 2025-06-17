@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/BoxenUndContainer.css">
+    <style>
+       .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       } 
+       /* .box {
+        width: 80%;
+        height: 80%;
+       } */
+
+       .rahmen {
+            /* Rahmen EINZELN formatiert */
+ 
+            /* Rahmenstärke/dicke */
+            border-width: 5px;
+ 
+            /* Rahmenfarbe */
+            border-color: blue;
+ 
+            /* Rahmenart: dashed, dotted, solid, ... */
+            border-style: solid;
+ 
+            /* Rahmen ZUSAMMENGEFASST formatiert
+                !!! ACHTUNG REIHENFOLGE MUSS EINGEHALTEN WERDEN !!!
+            */
+            border: 10px dashed maroon;
+ 
+            /* 1 Wert => akke 4 Seiten */
+            border-color: green;
+ 
+            /* 2 Werte ->
+                1. Wert = Oben und Unten
+                2. Wert = Links und Rechts
+            */
+ 
+            /* 3 Werte ->
+                1. Wert - Oben
+                2. Wert - Links und Rechts
+                3. Wert - Unten
+            */
+            border-color: maroon blue red;
+ 
+            /* 4 Werte -> im Uhrzeigersinn beginnend mit Oben */
+            border-color: maroon blue red green;
+ 
+            border-left-color: black;
+ 
+            /* border-style: solid dotted dashed double; */
+ 
+
+           border-radius: 20% 0%;
+           background-clip: content-box;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box rahmen">
+            <!--  -->
+        </div>
+    </div>
+</body>
+</html>

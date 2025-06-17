@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-Kombinatoren</title>
+    <style>
+        /* Formatiert alle p-Elemente welche direkt auf ein p-Element folgen */
+        p~p{color: red;}
+        /* Formatiert das 1. p-Element welches auf ein Div-Element folgt */
+        div+p{color: blue;}
+        /* Formatiert alle p-KindElemente innerhalb eines Div-Bereichs */
+        div>p{border: 3px solid maroon;}
+
+        div p{text-transform: uppercase;}
+
+    </style>
+</head>
+<body>
+    <h1>CSS-Kombinatoren</h1>
+    <!-- (p>lorem)*5+div>(p>lorem)*5^^(p>lorem)*5 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda velit voluptate minus at reprehenderit, voluptatibus quibusdam saepe praesentium voluptatem vero maxime tenetur quaerat sit obcaecati unde nihil quas consectetur laborum?</p>
+    <p>Officia in, eligendi accusamus iusto atque, ratione eos nihil dolores, rerum est aliquam quia dignissimos distinctio ea blanditiis porro ducimus. Repellat assumenda corrupti molestias, maxime accusamus facere dicta amet odit?</p>
+    <p>Nostrum iste neque repellendus consequatur non. Quaerat aspernatur doloremque sapiente voluptatum? Id doloremque neque praesentium veritatis. Ratione cumque quidem vitae voluptatibus provident, debitis id architecto pariatur, laborum explicabo laboriosam soluta!</p>
+    <p>Illum soluta veniam quam molestiae, praesentium possimus magni quaerat aliquam omnis, nihil dolorem eligendi, molestias exercitationem earum cupiditate quasi ex ipsam deserunt. Illo itaque rem dolorum enim. Nemo, accusantium earum!</p>
+    <p>Facilis minus ipsum ullam ipsa natus voluptas reiciendis provident nisi eum maiores quos quasi totam nihil, delectus, alias dolores quae maxime voluptate iure at repudiandae, aspernatur quidem officia. Adipisci, soluta!</p>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quidem quae reprehenderit odio dolorem deleniti eum deserunt ad. Dicta alias ipsa id consequuntur sed. Odio officiis consequuntur atque maxime assumenda.</p>
+        <p>Corporis iste quo molestiae reprehenderit eligendi, dolorem nam sequi deleniti optio porro. Veniam mollitia incidunt non vitae eum. Animi architecto corrupti quis error quidem, voluptates vel molestias praesentium quaerat maxime?</p>
+        <p>Libero, aliquam? Autem a, rerum quidem molestiae ex vel ipsa quas inventore iste unde iusto soluta dicta esse doloremque eveniet ipsum quisquam vitae debitis quos eaque? Saepe corrupti natus neque.</p>
+        <p>Ab, atque repellendus? Repudiandae porro dignissimos aliquid doloribus labore aliquam sint? Qui aperiam officiis voluptates voluptatum consectetur laborum voluptate sed tempora, nulla enim deleniti deserunt explicabo dolore, excepturi suscipit ipsum.</p>
+        <p>Molestiae officia expedita ipsam aperiam. Quod placeat magnam quas iusto expedita nesciunt! Soluta quasi dolorem voluptatem quisquam dignissimos blanditiis ratione sapiente cum minima, reprehenderit eos ad quae quidem vero dolorum?</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente debitis aliquid beatae vel at hic, nisi sit libero illo, obcaecati qui molestiae molestias minima quo consequuntur dolorem fuga quae neque!</p>
+    <p>Consectetur beatae aliquam commodi quisquam omnis, ratione voluptas laboriosam doloremque nisi. Voluptatibus modi illum, sapiente tenetur ullam, perferendis esse officiis ipsa nulla illo hic. Delectus iusto reiciendis a dolore et?</p>
+    <p>Obcaecati maxime ex non quo, placeat praesentium voluptatum id accusamus provident, rerum repellendus nisi aliquid error! Earum illum sed odio reiciendis nihil corrupti omnis repellat animi commodi blanditiis, quam unde!</p>
+    <p>Ab sint at voluptatem dolorum saepe, facilis, minima delectus commodi incidunt blanditiis ducimus eum suscipit assumenda qui sit eaque temporibus, ut adipisci. Reiciendis animi accusamus eaque doloremque dicta asperiores mollitia?</p>
+    <p>Maiores quisquam earum excepturi quae dolores placeat nobis. Sed, optio dolore assumenda nemo tempora rerum. Nobis repellat, officia nihil veritatis ad alias dicta quisquam accusamus quaerat pariatur! Tempora, aspernatur provident.</p>
+</body>
+</html>

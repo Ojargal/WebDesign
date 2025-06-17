@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/BoxenUndContainer.css">
+    <style>
+        .box{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32pt;
+        }
+        .A{
+            z-index: 1;
+            margin: 20px;
+            background-color: lightgreen;
+        }
+        .B{
+            z-index: 2;
+            margin: 40px;
+            background-color: skyblue;
+        }
+        .C{
+            z-index: 3;
+            margin: 60px;
+            background-color: maroon;
+            color: gold;
+        }
+        .D{
+            
+            z-index: 4;
+            margin: 80px;
+            background-color: gold;
+            color: maroon;
+        }
+        .box:hover {
+            z-index: 100;
+            background-color: indigo;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box A">A</div>
+        <div class="box B">B</div>
+        <div class="box C">C</div>
+        <div class="box D">D</div>
+    </div>
+
+</body>
+</html>

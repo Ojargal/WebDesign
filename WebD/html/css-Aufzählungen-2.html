@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/BoxenUndContainer.css">
+    <style>
+        .container{
+            padding: 30px;
+            overflow: auto;
+        }
+        body{
+            counter-reset: bundeslander;
+        }
+
+        h1::after{
+            counter-increment: bundeslander;
+            content: " "counter(bundeslander)".";
+            color: red;
+        }
+
+        h1{
+            color: blue;
+            counter-reset: viertel;
+        }
+        h2::before{
+            counter-increment: viertel;
+            content: counter(bundeslander)"."counter(viertel)" ";
+            color: blue;
+        }
+
+        h2{color: hotpink;}
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Oberösterreich</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat reiciendis cupiditate quidem quo nostrum fugiat velit a nemo numquam, placeat culpa facere corrupti facilis excepturi minus labore ullam nam. Natus.
+        <h2>Innviertel</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates placeat commodi voluptate facilis, quidem architecto explicabo cupiditate laudantium, illum delectus veritatis, cumque perspiciatis sed voluptatibus officia dolores aperiam. Adipisci, magnam.
+        <h2>Mühlviertel</h2>
+        Itaque repudiandae provident officia quis vel perspiciatis a, non unde aut, labore possimus eum soluta rem atque quam accusamus aspernatur. Voluptatum, quaerat voluptates autem adipisci in distinctio rerum mollitia quo.
+        <h2>Hausruckviertel</h2>
+        Quas voluptatum sed odio eum labore qui possimus? Odit delectus illo aperiam unde totam, nesciunt consequuntur eos quos, debitis iure aliquam ad excepturi, consectetur architecto veniam officia rem veritatis sint.
+        <h2>Traunviertel</h2>
+        Architecto facere voluptate atque iste saepe aperiam labore sint cumque eius! Ipsum voluptatem, delectus sit magni dolores atque earum nam ea aliquam doloribus nostrum excepturi rem facilis velit. Facere, recusandae.
+        <h1>Niederösterreich</h1>
+        Aspernatur magni expedita adipisci consequuntur fuga a commodi est suscipit corrupti nesciunt rem iure tempora neque sint natus at quasi dolorem in praesentium nobis quisquam, eos accusamus odit beatae. Doloremque.
+        <h2>Waldviertel</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque ad aut voluptates totam, sit illo, ut assumenda beatae ipsam voluptatibus cumque, id libero doloribus? Consequatur doloremque suscipit vitae distinctio.
+        <h2>Industrieviertel</h2>
+        Provident, perferendis quasi similique in voluptate, quidem obcaecati rerum nulla, sint tenetur nostrum laudantium nemo itaque inventore dolores repellat! Enim commodi atque velit minus dolore consectetur nemo eligendi iste doloremque.
+        <h2>Mostviertel</h2>
+        Doloremque odit sint earum repudiandae aperiam eligendi quibusdam sed dolorem! Unde neque repellat totam? Iste perferendis laudantium recusandae, at nam esse repudiandae dicta totam ipsa, eos beatae voluptatum accusamus optio.
+        <h2>Weinviertel</h2>
+        Aspernatur perspiciatis voluptates ipsum fugiat corporis, mollitia inventore? Odit itaque tempora adipisci rem corporis culpa sunt! Voluptate ipsum odit perspiciatis. Amet error alias minima quos possimus deserunt officia voluptatibus repellat!
+    </div>
+</body>
+</html>

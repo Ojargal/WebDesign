@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-Aufzählungen-3</title>
+    <link rel="stylesheet" href="../css/BoxenUndContainer.css">
+    <style>
+        /* ol{
+            counter-reset: getraenk;
+            list-style-type: none;
+        }
+        li::before{
+            counter-increment: getraenk;
+            content: counters(getraenk, ".")". ";
+            color: green;
+            font-weight: bold;
+        } */
+
+        /* ol.cafe li{
+            list-style-type: "☕";
+        }
+        ol.biere li{
+            list-style-type: "🍻";
+        }
+        ol.limos li{
+            list-style-type: "🍹";
+        } */
+
+        ol.limos li::marker{
+            content: "🥨";
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ol>
+            <li>Kaffee
+                <ol class="cafe">
+                    <li>Großer Brauner</li>
+                    <li>Melange</li>
+                    <li>Einspänner</li>
+                    <li>Milchkaffe</li>
+                    <li>Mokka</li>
+                </ol>
+            </li>
+            <li>Limonaden
+                <ol class="limos">
+                    <li>Almdudler</li>
+                    <li>Fanta</li>
+                    <li>Sprite</li>
+                    <li>MezzoMix</li>
+                    <li>Cola</li>
+                    <li>Gröbi</li>
+                </ol>
+            </li>
+            <li>Biere
+                <ol class="biere">
+                    <li>Zipfer</li>
+                    <li>Stiegl</li>
+                    <li>Gösser</li>
+                    <li>Wieselburger</li>
+                    <li>Ottakringer</li>
+                    <li>Uttendorfer</li>
+                    <li>Hirter </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

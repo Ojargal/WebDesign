@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-Pseudoelemente</title>
+    <style>
+        /* Formatieren den 1. Buchstaben eines Absatztes */
+        p::first-letter{
+        /* Schriftgröße */
+        font-size: 32pt;
+        color: red;
+        }
+        /* Formatiert die 1. Zeile */
+        p::first-line{
+            background-color: yellow;
+        }
+        /* Fügt vor jedem Absatz etwas ein z.b ein Bild */
+        p::before{
+            /* content: url(../images/checkmark.png); */
+            content: "🦴";
+        }
+        /* Fügt nach jedem Absatz etwas ein z.b ein Bild */
+        p::after{
+            /* content: url(../images/checkmark.png); */
+            content: "🥨";
+        }
+        /* Formatiert den Ausgewählten/markierten Text */
+        p::selection{
+            background-color: maroon;
+            color: gold;
+        }
+        /* Beispiel */
+        .Ponifex::selection{
+            background-color: purple;
+            color: white;
+        }
+
+        /* Formatierung von Listen */
+        li::marker{
+            content: "😊";
+        }
+    </style>
+</head>
+<body>
+
+    <ol>
+        <li>Großer Schwarzer</li>
+        <li>Kleiner Brauner</li>
+        <li>Melange</li>
+        <li>Caffe Latte</li>
+        <li>Einspäner</li>
+    </ol>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates possimus sint ex consequatur tempore explicabo? Delectus, tenetur perferendis, quasi neque repudiandae qui necessitatibus nobis labore soluta est sint! Soluta, suscipit.</p>
+    <p>Libero nemo et natus qui vero assumenda fugit error necessitatibus ut fugiat. Id delectus repellat officiis obcaecati fugit libero beatae facere, voluptas, omnis velit soluta ipsa distinctio illum necessitatibus temporibus!</p>
+    <p>Impedit quia sunt maiores itaque alias odit necessitatibus consectetur hic expedita quae obcaecati aperiam, ipsum fuga, quas perspiciatis. Nostrum beatae aliquam distinctio pariatur dignissimos explicabo magni fugit molestiae velit voluptatum.</p>
+    <p class="Ponifex">Voluptatem dolorum facere fugiat doloremque eos rerum voluptates assumenda odio ipsum soluta earum ullam quam, consectetur facilis modi quisquam deleniti dolorem maiores quas explicabo amet illum! Veniam quos itaque ad?</p>
+    <p>Aliquam doloribus aliquid voluptas tempore accusamus possimus perspiciatis in, quo ex eveniet est quos veritatis eos facilis ratione? Magnam deserunt impedit laborum sapiente modi mollitia aspernatur dolore, quam ex animi!</p>
+
+</body>
+</html>

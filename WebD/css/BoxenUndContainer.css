@@ -1,0 +1,42 @@
+html, body{
+    /* Aussenabstand */
+    margin: 0;
+
+    /* Ihnenabstand */
+    padding: 0;
+}
+
+
+.box, .container{
+    /* Rahmen zusammenfasste */
+    border: 1px solid black;
+}
+
+.container{
+    /* Breite */
+    width: 800px;
+
+    /* Höhe */
+    height: 900px;
+
+    /* Hintergrundfarbe */
+    background-color: blanchedalmond;
+
+    /* Aussenabstand */
+    margin: auto;
+
+}
+
+.box{
+    /* Breite */
+    width: 100px;
+
+    /* Höhe */
+    height: 100px;
+
+    /* HIntergrundfarbe */
+    background-color: hotpink;
+}
+
+
+

@@ -1,0 +1,52 @@
+Allgemeine Tastenokmbinationen
+    STRG + A => Alles auswählen
+    STRG + C => Auswahl kopieren
+    STRG + x =>  Auswahl ausschneiden
+    STRG + v =>    Inhalt der Zwischenablage einfügen
+    STRG + S =>    Speichern
+    STRG + Shift + s  =>   Speichern unter
+    STRG + H  =>   Suchen und ersetzen
+    STRG + F =>    Suchen
+    STRG + Z =>    Rückgängig
+    STRG + Y  =>   Wiederholen
+    STRG + N =>    Neu DAtai/ Fenster ...
+    STRG + P =>    Druckdialog
+
+Text auswählen/markien und Cursor positionieren
+    Shift + Pfleitaste Links/Rechts  =>    Zeichweiss markieren
+    STRG + Shift + Pfleitaste Links/Rechts => Wortweises markieren
+
+
+    Ende => an das Ende der Zeile
+    STRG + Ende => Setzt Cursor an das Ende des Dokuments
+    Shift + Ende => Markiert ganze Zeile ab Cursorposition nach Rechts
+    STRG + Shift + Ende => Markiert ganze Bereich ab Cursorposition nach Unten
+
+    Post1 => Cursor am den Begin der Zeile
+    STRG + Post1 => Setzt Cursor an den Begin des Dokuments
+    Shift + Post1 => Markiert ganze Zeile ab Cursorposition nach Links
+    STRG + Shift + Post1 => Markiert ganze Bereich ab Cursorposition nach Oben
+
+    STRG + Pfleitaste nach Links/Recht => Setzt Cursor ein Wort nach Links bzw. Rechts
+
+    BACKSPACE => Zeicheweises löschen
+    STRG + BACKSPACE => Wortweises löschen
+
+    Shift + 1*Ende => Markiert gesamte Zeile
+
+Tastenokmbinationen für Visual Studio Code
+
+    ! in HTML - Dokument => fügt das Grundgerüst einer HTML Datei ein
+    STRG + # (Raute/Hashtag/Doppelkreuz/Kanalgitter/TicTacToe ...) => Fügt Kommentar ein
+    Alt + Shift + Pfeiltaste nach Unten/Oben => kopiert aktuellen Bereich nach Oben/Unten
+    STRG + D => markiert je drücken der Tastenokmbinationen das nächste vorkommen des ausgewählten Textes
+    STRG + Shift + L => markiert ALLE Vorkommen des aktuell ausgewählten Textes
+    STRG + W => shcließt den aktuellen Tastenokmbinationen
+    STRG + TAB => wechselt zur nächten geöffneten Datei
+    STRG + G => wechselt zur angegebenen Zeilennummer
+    STRG + P => Datei suchne
+    ALT + SCHIFT + F => Dokument formatieren
+    STRG + B => Dateiexplorer ein/ausblenden
+    ALT + Pfeiltaste nach oben/unten => Zeile nach oben/unten Verschieben
+
+

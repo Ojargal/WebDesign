@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,td,th{
+            border: 2px solid green;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        table {
+            width: 600px;
+        }
+        thead{
+            background-color: aqua;
+        }
+        .schinagl{
+            background-color: hotpink;
+        }
+
+        th{
+            width: 400px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    
+    <h1>Tabellen</h1>
+    <h2>Tabellen - Grundlagen</h2>
+
+     <table> <!-- Beginn einer Tabelle -->
+        <tr>
+            <!-- td => Datenzelle -->
+            <td>Datenzelle</td>
+
+            <!-- th => Kopfzelle -->
+            <th>Kopfzelle</th>
+
+        </tr>
+    </table> <!-- Ende einer Tabelle -->
+    <hr>
+    <h2>Einfache Tabelle</h2>
+    <!-- table>(tr>th*3)+(tr>td*3)*5 -->
+    <table>
+        <tr>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>NAUB</th>
+        </tr>
+        <tr>
+            <td>Daniel</td>
+            <td>Stark</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>Bernhard</td>
+            <td>Doppler</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>Niko</td>
+            <td>Osap</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>Nuhi</td>
+            <td>Fazlii</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>Vera</td>
+            <td>Meltzer</td>
+            <td>5000</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Logische Tabelle</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Vorname</th>
+                <th>Nachname</th>
+                <th>NAUB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Daniel</td>
+                <td>Stark</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>Bernhard</td>
+                <td>Doppler</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Niko</td>
+                <td>Osap</td>
+                <td>3000</td>
+            </tr>
+            <tr>
+                <td>Nuhi</td>
+                <td>Fazlii</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>Vera</td>
+                <td>Meltzer</td>
+                <td>5000</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+    <hr>
+
+    <h2>Tabellenzellen verbinden</h2>
+    <table>
+        <tr>
+            <th class="schinagl" colspan="4">Teilnehmerliste</th>
+        </tr>
+        <tr style="background-color: skyblue;">
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>NAUB</th>
+            <th>Klasse</th>
+        </tr>
+        <tr>
+            <td>Daniel</td>
+            <td>Stark</td>
+            <td>2000</td>
+            <th style="background-color: palegreen" rowspan="5">AP03/04-2025</th>
+        </tr>
+        <tr>
+            <td>Bernhard</td>
+            <td>Doppler</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>Niko</td>
+            <td>Osap</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>Nuhi</td>
+            <td>Fazlii</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>Vera</td>
+            <td>Meltzer</td>
+            <td>5000</td>
+        </tr>
+    </table>
+
+    <h2>Übung 1</h2>
+    <!-- table>(tr>th{&nbsp;}*4)*4 -->
+    <table>
+        <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <th>&nbsp;</th>
+            <th style="background-color: green;" rowspan="2"; colspan="2">&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+    </table>
+
+    <h2>Übung 2</h2>
+    <!-- table>(tr>th{&nbsp;}*4)*4 -->
+    <table>
+        <tr>
+            <th colspan="4">Übung zum bisherigen Stoff</th>
+        </tr>
+        <tr>
+            <th>Sortierte Liste</th>
+            <th>Wappen</th>
+            <th>Liste mit Hyperlinks</th>
+            <th>Bild mit Hyperlink</th>
+            
+        </tr>
+
+        <tr>
+            <td>
+                <ol type="1" start="1">
+                    <li>Innviertel</li>
+                    <li>Mühlviertel</li>
+                    <li>Hausruckviertel</li>
+                    <li>Traunviertel</li>
+                </ol>
+            </td>
+            <th>
+                <img src="../images/Wappen_Oberösterreich.png" alt="Wappen_Oberösterreich.png">
+            </th>
+            <td>
+                <ul>
+                    <li><a href="https://www.wien.gv.at/">Wien</a></li>
+                    <li><a href="https://www.graz.at/">Graz</a></li>
+                    <li><a href="https://www.innsbruck.gv.at/" target="_blank">Innsbruck</a></li>
+                    <li><a href="https://www.bregenz.at/home">Bregenz</a></li>
+                </ul>
+            </td>
+            <th>
+                <a href="https://www.oesterreich.gv.at/"><img src="../images/Bundesadler.png" alt=""></a>
+            </th>
+        </tr>
+    </table>
+
+    <h2>mit Emmet erstellt</h2>
+
+    <table>
+        <tr>
+            <th colspan="4">Übung zum bisherigen Stoff</th>
+        </tr>
+        <tr>
+            <th>Sortierte Liste</th>
+            <th>Wappen</th>
+            Liste mit Hyperlinks
+            <th>Bild mit Hyperlink</th>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li>Innenviertel</li>
+                    <li>MühlviertelHausruckviertel</li>
+                    <li>MühlviertelHausruckviertelTrauviertel</li>
+                    <li>jjj</li>
+                </ol>
+            </td>
+            <th><img src="" alt=""></th>
+            <td>
+                <ul>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                    <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+                </ul>
+            </td>
+            <th><a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt=""></a></th>
+        </tr>
+    </table>   
+
+
+    
+
+
+
+
+</body>
+</html>

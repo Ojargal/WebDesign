@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Einbinden der externen CSS-Datei -->
+    <link rel="stylesheet" href="../css/formate.css">
+    <style>
+        /* Dies ist ein Css-Kommentar */
+
+        /* Elementformatierung */
+        h1 {
+            color: skyblue;
+        }
+
+        /* Formatierung mehrerer Elemente */
+        h1,
+        h2 {
+            /* Besteht eine Schriftart aus mehr als einem Wort, so muss dieses in Anführungszeichen gesetzt werden */
+            font-family: 'Courier New';
+        }
+
+        /* Formatierung mittels ID, eine ID beginnt in CSS mit einer Raute, Hashtag, Doppelkreuz, Kanalgitter,- ...
+    ein ID-Wert darf in gesamten Dokument nur 1x vokommen
+    mehrerer ID-Werte werden Beistrichgetrennt formatiert */
+        #Pontifex,
+        #Schinagl {
+            /* Hintergrundfarbe */
+            background-color: gold;
+            color: maroon;
+        }
+
+        /* Eine Klasse beginnt mit einem Punkt und kann im Dokument beliebig oft verwendet werden, mehrer Klassen werden Beistrichgetrennt erstellt */
+        .Papst {
+            font-family: Verdana;
+        }
+
+        /* Elementklasse/Selektorklasse ist nur für das angegebene Element gültig, dasselbe gilt auch für ID's */
+        h1.Rom {
+            border: 5px solid maroon;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inline-Style -->
+    <h1 style="color: hotpink;">CSS Einstieg</h1>
+
+    <!-- Anwenden der ID Schinagl -->
+    <h1 id="Schinagl">CSS Einstieg</h1>
+
+    <!-- Anwenden der Klasse Papst -->
+    <h1 class="Papst">CSS Einstieg</h1>
+
+    <!-- Anwenden der ID Pontifex und der Klasse Papst -->
+    <h1 id="Pontifex" class="Papst">CSS Einstieg</h1>
+
+    <!-- Anwenden mehrer Klassen -->
+    <h1 class="Papst Rom">CSS Einstieg</h1>
+    <!-- Die Klasse "Rom" funktioniert ausschlißlich in H1-Elementen(siehe Stylebereich) -->
+    <h1 class="Rom">Schinagl</h1>
+    <!-- Klasse "Rom" funktioniert hier nicht -->
+    <h2 class="Rom">Schinagl</h2>
+
+    <!-- Tipp zur Anwendung von Klassen bzw. IDs -->
+    <!-- h1.Papst.Rom#Schinagl -->
+    <h1 class="Papst Rom" id="Schinagl">Wo was i</h1>
+    <!-- .Rom erstellt einen Div-Bereich mit der Klasse Rom -->
+    <div class="Rom"></div>
+
+</body>
+
+</html>

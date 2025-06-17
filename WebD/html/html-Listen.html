@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Listen</h1>
+    <h2>Sortierte Listen</h2>
+    <!-- ol>li*4 -->
+    <ol type="1" start="3">
+        <!--
+        type="A" => Großbuchstaben
+        type="B" => Kleinbuchstaben
+        type="I" => Römische Zahlen (Gross)
+        type="i" => Römische Zahlen (Klein)
+        type="1" => Arabische Zahlen
+
+        start =>legt den Startwert fest
+        -->
+        <li>Wien</li>
+        <li>Linz</li>
+        <li>Graz</li>
+        <li>Salzburg</li>
+    </ol>
+    <h2>Unsortierte Listen</h2>
+    <ul>
+        <li>Wien</li>
+        <li>Linz</li>
+        <li>Graz</li>
+        <li>Salzburg</li>
+        
+    </ul>
+    <h2>Verschachtelte Listen</h2>
+    <!-- ol>(Li>ul>li*5)*3 -->
+        <ol>
+        <Li>Limonade
+            <ul>
+                <li>Cola</li>
+                <li>Fanta</li>
+                <li>Gröbi</li>
+                <li>Sprite</li>
+                <li>MezzoMix</li>
+            </ul>
+        </Li>
+        <Li>Kaffee's
+            <ul>
+                <li>Großer Brauner</li>
+                <li>Kleiner Brauner</li>
+                <li>Melange</li>
+                <li>Mokka</li>
+                <li>Einspäner</li>
+            </ul>
+        </Li>
+        <Li>Biere
+            <ul>
+                <li>Uttendorfer</li>
+                <li>Riener</li>
+                <li>Gösser</li>
+                <li>Stiegl</li>
+                <li>Hirter</li>
+                <li>Ottakringer</li>
+                <li>Zwettler</li>
+            </ul>
+        </Li>
+    </ol>
+
+    <h2>Definitionslisten</h2>
+
+    <!-- dl>(dt+dd)*4 -->
+    <dl>
+        <dt>BBRZ</dt>
+        <dd>Berufliches Bildung und RehabilitationsZentrum</dd>
+
+        <dt>FIAT</dt>
+        <dd>Fehler in allen Teilen</dd>
+
+        <dt>Ford</dt>
+        <dd>Mit'n Ford foast Fort, mitn Zug kummst Zruck</dd>
+        
+        <dt>Opel</dt>
+        <dd>Ohne Problem ewig leben</dd>
+    </dl>
+</body>
+
+</html>

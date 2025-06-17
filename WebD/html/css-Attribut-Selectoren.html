@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Formatiert alle Elemente welche ein title-Attribut besitzen */
+        [title]{
+        font-family:"Courier new";
+    }
+    /* Formatiert alle p-Elemente die ein title-Attribut besitzen  */
+    p[title]{
+        border: 3px solid maroon;
+    }
+    /* Formatiert alle Elemente bei welchem der title-Attributsewrt exakt "html css javascript" ist  */
+    [title="html css javascript"]{
+        background-color: lightgreen;
+    }
+    /* Formatiert alle p-Elemente bei welchem der title-Attribut mit "css" beginnt  */
+    [title^="css"]{
+        background-color: lightblue;
+    }
+    /* Formatiert alle p-Elemente bei welchem der title-Attribut mit "css" endet  */
+    [title$="css"]{
+        background-color: lightpink;
+    }
+    /* Formatiert alle p-Elemente bei welchem der title-Attribut mit "css" beinhaltet  */
+    [title*="css"]{
+        padding: 20px;
+        text-transform: uppercase;
+    }
+    /* Formatiert alle p-Elemente bei welchem der title-Attribut mit "Max" beinhaltet  */
+    [title*="Max"]{
+        border: 5px solid maroon;
+        padding: 10px;
+    }
+    /* Formatiert alle p-Elemente bei welchem der title-Attribut mit "Max" als eigenständiges Wort vorkommt  */
+    [title~="Max"]{
+        background-color: gold;
+    }
+            /* www.msexchange.com */
+    /* Formatiert Element bei welchem das href-Attribute mit "https://" beginnt und mit ".org" endet */
+    a[href^="https://"][href$=".org"]{
+        color: red;
+    }
+
+    h1[lang|="de"]{
+       background-color: lightgoldenrodyellow;
+    }
+    /* [lang|="en"]{
+       background-color: lightgoldenrodyellow;
+    } */
+    </style>
+</head>
+
+<h1 lang="de-at">Servus</h1>
+<h1 lang="de-de">Guten Tag</h1>
+<h1 lang="de-ch">Grüzi</h1>
+<h1 lang="de">Hallo</h1>
+<h1 lang="en">Hello</h1>
+
+<a href="https://www.wien.at" target="_blank" rel="noopener noreferrer">Zur Webseite der Stadt Wien</a><br>
+<a href="https://www.wien.org" target="_blank" rel="noopener noreferrer">Irgendeine seite über Wien</a>
+<body>
+    <h1 title="Max">Schinagl</h1>
+    <h1 title="Maximus">Schinagl</h1>
+    <p title="html css javascript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur modi, quae aliquid nostrum libero nihil iste voluptatem nemo nobis laudantium maxime laboriosam consequatur minima quam rem labore fugit suscipit impedit repellat ratione placeat molestias numquam quibusdam soluta? Vero modi soluta reprehenderit quia, qui, eligendi ipsum porro vitae, cupiditate deleniti quisquam? Similique maxime iste ullam totam et tenetur magnam ipsum ratione minus impedit accusantium praesentium cupiditate illo deleniti alias voluptates veritatis harum nulla ipsam, dolore labore necessitatibus. Reprehenderit quisquam suscipit, id omnis sapiente minima hic, qui totam maxime architecto impedit, non a quasi praesentium ab quo voluptate esse obcaecati ex nesciunt.</p>
+    <p title="css html javascript">TITLE MIT CSS BEGINNT<br>Illum esse suscipit alias fuga voluptates non? Et maiores repellendus eligendi. Doloribus voluptatibus facere expedita neque at? Provident fuga numquam nostrum labore, id repellat sint, magnam aut commodi pariatur dolorum aspernatur doloribus reiciendis, quos cum distinctio dolore facilis ex! Vel, iusto. Nam, quidem exercitationem unde veniam laudantium repellendus assumenda accusamus, sit iusto tenetur reiciendis error? Distinctio, sint repellendus et nostrum illum voluptas. Dolores possimus reiciendis iste exercitationem, eius, recusandae nam sit minima vero vel debitis ducimus. Provident officia distinctio beatae, enim quos id nisi qui, fugiat doloremque, reprehenderit cum. Impedit illum architecto suscipit debitis quod voluptatum cum, atque quasi officiis?</p>
+    <p title="html javascript css">TITLE MIT CSS ENDET<br>Recusandae distinctio tempora vitae temporibus minus corporis dolorum beatae nisi fugit? Odit molestiae veniam architecto voluptatibus doloribus. Nam expedita neque velit reprehenderit quos ipsum mollitia unde pariatur dolores nemo. Aspernatur molestiae doloribus ipsum quaerat repudiandae debitis numquam aliquid dolor corporis libero accusantium facere, sed necessitatibus reprehenderit quisquam amet culpa fuga, impedit magnam placeat consectetur eaque. Harum nemo, tempore alias consectetur minus possimus odit cupiditate necessitatibus delectus! Laudantium numquam repellendus culpa perspiciatis delectus voluptatem consectetur, possimus officiis! Consequatur blanditiis non atque recusandae dignissimos quidem voluptate dicta, reiciendis vitae commodi excepturi tempore, sit corporis ipsum mollitia saepe? Maxime quidem eum ipsum eaque!</p>
+    <p>Id molestiae, optio at vero velit, sapiente excepturi illum earum porro, officiis ullam? Nostrum vitae corporis assumenda nulla ducimus suscipit neque ad dolor magnam odit accusamus eveniet in itaque, fuga aperiam omnis reiciendis? Eius ullam ab veniam tempora, commodi quam a quas, unde est quia distinctio corrupti, ipsam optio deleniti aut cumque illum minima quo sed repudiandae? Adipisci commodi a modi quae iure dolore voluptatem at minus rerum unde doloremque atque nihil sapiente quam, quibusdam saepe sint doloribus hic deserunt, magni libero temporibus quidem, ullam dolorem. Iure ipsum adipisci dolores, consequatur, velit ut in repellendus quibusdam pariatur ullam vero laboriosam.</p>
+    <p title="javascript html css">TITLE MIT CSS ENDET <br>Magnam sed ea doloremque, esse tenetur nihil aspernatur illum, corrupti totam molestias id omnis! Pariatur, illo et quam architecto perspiciatis amet corrupti deserunt totam, eligendi rem ea doloremque dolor natus expedita, possimus tenetur blanditiis ipsa laboriosam minima magni error odio voluptate vero. Quo alias atque at reiciendis asperiores tempore, soluta dolores neque explicabo sapiente exercitationem itaque quis repudiandae excepturi consequuntur, sit quaerat! Impedit numquam dolorem, consequatur odit esse ab deserunt deleniti vel dolores, quo error maxime. Perspiciatis impedit, ducimus quasi cupiditate illum ipsam quo reiciendis atque libero eaque voluptatum quibusdam quod, architecto dolorum nobis exercitationem optio? In laborum tempore molestiae.</p>
+    <p title="javascript html">Dignissimos, amet? Excepturi aperiam saepe ipsa minima dolores sed similique sunt possimus quia unde ex quas, eaque maiores ullam repudiandae libero. Nulla at sit, odit sequi repudiandae deleniti aut eum mollitia, atque animi voluptatibus incidunt quas placeat debitis doloribus eligendi sint delectus. Earum cupiditate alias, eius aspernatur ratione ipsum. Labore sunt cum placeat exercitationem praesentium quam vitae ea natus repellendus numquam quaerat corrupti repudiandae autem perferendis dolore sed reiciendis accusamus aliquam doloremque fugit, dicta animi necessitatibus quod! Sequi ipsa unde eveniet totam a sunt error, iusto adipisci officiis assumenda omnis esse, inventore, aspernatur tempora nobis quos optio porro magni pariatur.</p>
+    <p title="javascript html css">Iusto placeat voluptate quisquam, praesentium eaque, recusandae, illum velit doloremque perferendis ex ipsum. Harum ducimus itaque velit deserunt? Cum expedita aliquam quibusdam. Cumque harum accusamus mollitia et nobis totam vitae tempora dolor praesentium atque hic temporibus eos numquam, amet perferendis id sequi quasi quod voluptatibus? Eius nobis ex doloribus facilis officia, omnis aliquam laboriosam assumenda minus laudantium voluptates? Eligendi sequi quibusdam enim autem rerum, pariatur obcaecati, est sapiente aspernatur hic deserunt eos quos reprehenderit. Laudantium minima exercitationem cupiditate, ducimus perferendis atque quidem inventore nostrum porro ipsa sed, est temporibus? Rerum et error facere? Qui repellat rem fugiat hic, non adipisci.</p>
+    <p>Voluptatum ex ab ea odio error voluptas excepturi fugiat distinctio commodi quas. Excepturi, omnis? Corrupti quo, sequi voluptatibus consequuntur nam placeat possimus sit at error repellendus magni ipsum quidem assumenda recusandae adipisci voluptas! Similique numquam, sequi autem suscipit iste maxime beatae assumenda quos omnis harum nam, dicta accusamus at provident quibusdam. Quasi, adipisci eum vel quo, nobis cupiditate rerum repudiandae magnam a minima recusandae accusamus quos id illum suscipit! Maxime doloremque, quo illum voluptate fugiat dolorem optio nostrum vel distinctio odio vitae quos delectus! Quam alias ut quia blanditiis repudiandae. Adipisci rerum voluptas, cumque doloribus nihil dolor reiciendis. Laudantium, mollitia?</p>
+    <p title="css javascript html ">Ea exercitationem voluptatibus sed officia aliquam cum veniam voluptate nam illo? Ipsa voluptates placeat accusamus at incidunt voluptas quam. Perferendis accusamus reprehenderit vitae ea sunt, alias ex, beatae amet, delectus tempore esse. Dicta ipsum quam rerum illum reprehenderit suscipit. Alias, dolores excepturi aliquam harum nam omnis quibusdam facilis, vel deleniti laudantium reprehenderit? Aliquam non, nisi, fugiat incidunt reprehenderit facere cupiditate necessitatibus veniam ad nobis modi tenetur blanditiis, qui nesciunt eaque expedita rerum? Incidunt neque repudiandae est, sint, ad earum a enim temporibus aliquam beatae minima expedita reprehenderit modi praesentium unde, iure eius fugit placeat ratione aliquid necessitatibus? Fuga, iste nulla?</p>
+    <p title="">Recusandae, soluta exercitationem. Mollitia excepturi culpa dolore sed quam vel blanditiis adipisci! Nobis hic laboriosam in provident possimus laborum minima. Cumque fugiat pariatur assumenda eum, quis laudantium? Atque dolor, voluptatem officia iste inventore soluta illum id illo tempora doloremque vel facere quae iusto repellendus minima minus eos labore animi deleniti officiis quam. Ad in, consequatur quisquam libero velit explicabo voluptatem esse dolores temporibus at doloribus modi eos reiciendis accusamus. Itaque at, fuga non perferendis nulla asperiores repudiandae dolores ullam a cumque. Quaerat nobis eos impedit vel fugiat voluptas cum laborum nisi corrupti nesciunt quod, quas ea ipsa exercitationem molestiae veritatis?</p>
+</body>
+</html>

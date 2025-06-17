@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulare</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personendaten</legend>
+            <table>
+                <tr>
+                    <td>Name: </td>
+                    <td>
+                        <!-- 
+                                mögliche Attribute:
+                                id => Attributswert darf im gesamten Dokument nur 1x verwendet werden 
+                                placeholder => Platzhalter welcher Informationen über die einzugebenden Daten enthält
+                                size => Größe des Elements
+                                maxlength => maximale Anzahl der Zeichen welche eingegeben werden können
+                                minlingth => mindestanzahl der Zeichen welche eingegeben werden MÜSSEN!
+                                value => vordefinierter Wert
+                                required => Pflichteingabefeld
+                                disabled => Deaktiveirtes Eingabefeld
+                                autofocus => Feld welches beim Laden automatisch ausgewählt wird
+                                tabindex => legt die Reihenfolge fest in welche die Eingabefelder mittels TAB-Taste auswählt werden 
+                                pattern => legt das Muster fest in welchem die Eingabe zu erfolgen hat
+                             -->
+                        <!-- <input type="text" id="Vorname" > -->
+                        <input type="text" id="Vorname" pattern="[A-Z]{2}-[0-5]{4}">
+                    </td>
+                </tr>
+                <!-- tr>td{Kontakt}+td>(input:checkbox[name=kontakt]+label)*4 -->
+                <tr>
+                    <td>Kontakt: </td>
+                    <td>
+                        <input type="checkbox" name="kontakt" id="Mail"><label for="Mail">Mail</label>
+
+                        <input type="checkbox" name="kontakt" id="SMS"><label for="SMS">SMS</label>
+
+                        <input type="checkbox" name="kontakt" id="Fax"><label for="Fax">Fax</label>
+
+                        <input type="checkbox" name="kontakt" id="Telefon"><label for="Telefon">Telefon</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Geschlecht: </td>
+                    <td>
+                        <!-- mit dem Name-Attribut werden die Radiobuttons GRUPPIERT damit immer nur EINER ausgewählt werden kann -->
+                        <input type="radio" name="Geschlecht" id="Mann"><label for="Mann">Mann</label>
+
+                        <input type="radio" name="Geschlecht" id="Frau"><label for="Frau">Frau</label>
+
+                        <input type="radio" name="Geschlecht" id="Inter"><label for="Inter">Inter</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kennwort: </td>
+                    <td><input type="password" name="Kennwort" id="Kennwort"></td>
+                </tr>
+                <tr>
+                    <td>Lebenslauf: </td>
+                    <td><input type="file" name="Dateien" id="Dateien" multiple></td>
+                </tr>
+                <tr>
+                    <td>Farbe: </td>
+                    <td><input type="color" name="Farbe" id="Farbe"></td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td><input type="email" name="email" id="eMail"></td>
+                </tr>
+                <tr>
+                    <td>Webseite: </td>
+                    <td><input type="url" name="Webseite" id="Webseite"></td>
+                </tr>
+                <tr>
+                    <td>Datum: </td>
+                    <!-- min => frühestens Datum, max => spätestens Datum -->
+                    <td><input type="date" name="Datum" id="Datum" min="2024-12-31" min="2025-05-08"></td>
+                </tr>
+                <tr>
+                    <td>Kalenderwoche: </td>
+                    <!-- min => min="2025-W18" frühesetes Kalenderwoche -->
+                    <!-- max => max="2025-W18" späteste Kalenderwoche -->
+                    <td><input type="week" name="Woche" id="Woche" max="2025-W18"></td>
+                </tr>
+                <tr>
+                    <td>Monat: </td>
+                    <!-- min => min="2025-5" frühesetes Monat -->
+                    <!-- max => max="2025-12" späteste Monat -->
+                    <td><input type="month" name="Monat" id="Monat" min="2025-05"></td>
+                </tr>
+                <tr>
+                    <td>Datum + Uhrzeit: </td>
+                    <td><input type="datetime-local" name="DuU" id="DuU" min="2025-05-08T14:30"></td>
+                </tr>
+                <tr>
+                    <td>Zahl: </td>
+                    <!-- 
+                        min => Kleinste Zahl
+                        max => größte Zahl
+                        step => Schrittweite
+                     -->
+                    <td><input type="number" name="DuU" id="DuU" min="0" max="20" step="5"></td>
+                </tr>
+                <tr>
+                    <td>Schrieberegler</td>
+                    <td><input type="range" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Telefonnummer</td>
+                    <td><input type="tel" name="" id=""></td>
+                </tr>
+                <!-- tr>td{Bundesland}+td>select#Bundesland[multiple][name=bundesland]>option*9 -->
+                <tr>
+                    <td>Bundeslan</td>
+                    <td>
+                        <!-- multiple => um mehrer Einträge mittels STRG-Taste auswählen zu können, standardmässig werden 4 Einträge 
+                            size => legt die Anzahl der Einträge fest welche angzeigt werden sollen -->
+                        <select name="Bundesland" id="Bundesland" multiple>
+                            <option value="W">Wien</option>
+                            <option value="N">Niederösterreich</option>
+                            <option value="O">Oberösterreich</option>
+                            <option value="S">Salzburg</option>
+                            <option value="T">Tirol</option>
+                            <option value="V">Vorarlberg</option>
+                            <option value="B">Burgenland</option>
+                            <option value="St">Steiermark</option>
+                            <option value="K">Kärnten</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- tr>td{Getränke}+td>select#getraenke[name=waszuTrinken]>(optgroup>option*5)*3 -->
+                <tr>
+                    <td>Getränke</td>
+                    <td>
+                        <select name="waszuTrinken" id="getraenke">
+                            <optgroup label="Limonaden">
+                                <option value="C">Cola</option>
+                                <option value="F">Fanta</option>
+                                <option value="S">Sprite</option>
+                                <option value="G">Gröbi</option>
+                                <option value="A">Almdudler</option>
+                            </optgroup>
+                            <optgroup label="Kaffees">
+                                <option value="M">Melange</option>
+                                <option value="GB">Großer Brauner</option>
+                                <option value="E">Einspänner</option>
+                                <option value="CL">Cafe Latte</option>
+                                <option value="IC">Irish Coffee</option>
+                            </optgroup>
+                            <optgroup label="Bier">
+                                <option value="G">Gösser</option>
+                                <option value="Z">Zipger</option>
+                                <option value="P">Puntigamer</option>
+                                <option value="W">Wieselburger</option>
+                                <option value="U">Uttendorfer</option>
+                                <option value="H">Hirter</option>
+                                <option value="Zw">Zwettler</option>
+                                <option value="O">Ottakringer</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Städte</td>
+                    <td>
+                        <input type="text" name="" id="" liste="Städte">
+                            <datalist id="Städte">
+                                <option value="Wien">
+                                <option value="Linz">
+                                <option value="Graz">
+                                <option value="Braunau">
+                                <option value="Mattighofen">
+                                <option value="Kapfenberg">
+                                <option value="Kindberg">
+                                <option value="Korneuburg">
+                                <option value="Salzburg">
+                                <option value="Innsbruck">
+                                <option value="Villach">
+                            </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kommentar</td>
+                    <td>
+                        <textarea name="Kommentar" id="Senf" placeholder="Geben Sie hier ihren Senf ab" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+
+        <button>Absenden</button>
+        <button>Züruckseztzen</button>
+        <br><br>
+        <input type="submit" value="Absenden">
+        <input type="reset" value="Züruckseztzen">
+        <br>
+        <input type="image" src="../images/sonne.gif" alt="">
+        
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-Pseudoklassen</title>
+    <!-- https://developer.mozilla.org/de/ -->
+    <style>
+        /* Formatiert alle "unbesuchten Links<" */
+        a:link {
+            font-size: 32px;
+            color: white;
+            background-color: indigo;
+            padding: 20px;
+        }
+
+        /* Formatiert alle "besuchten Links<" */
+        a:visited {
+            color: forestgreen;
+            text-decoration-color: hotpink;
+        }
+
+        /* Mouse-over Effekt */
+        a:hover {
+            background-color: yellow;
+            color: indigo;
+        }
+
+        /* Aktiver Links */
+        a:active {
+            background-color: red;
+            color: white;
+        }
+
+        /* Formatiert alle ungeraden p-Element */
+        p:nth-of-type(odd) {
+            background-color: skyblue;
+        }
+
+        /* Formatiert alle geraden p-Element */
+        p:nth-of-type(even) {
+            background-color: hotpink;
+        }
+
+        /* Formatiert alle 1. p-Element */
+        p:nth-of-type(1) {
+            background-color: lightgreen;
+        }
+
+        /* Formatiert alle 3. p-Element */
+        p:nth-of-type(3n) {
+            background-color: indigo;
+            color: white;
+        }
+
+        /* Formatiert alle 3. p-Element beginnend mit dem 2. p-Element*/
+        p:nth-of-type(3n+2) {
+            background-color: gold;
+            color: maroon;
+        }
+
+        /* Formatiert des erste p-Element */
+        p:first-of-type {
+            text-transform: uppercase;
+        }
+
+        /* Formatiert das letzte p-Element */
+        p:last-of-type {
+            text-decoration: underline;
+        }
+        /* Formatiert des erstes p-Kindelement */
+        p:first-child {
+            color: red;
+        }
+        /* Formatiert des letzte p-Kindelement */
+        p:last-child {
+            color: blue;
+        }
+
+        /* Formatiert alle input-felder vom Typ Text */
+        input[type="text"] {
+            margin: 10 0px;
+        }
+
+        /* Formatiert alle optionaen Texteingabefelder */
+        input:optional {
+            border: 5px solid green;
+        }
+
+        /* Formatiert alle Pflichteingabefelder */
+        input:required {
+            border: 5px solid red;
+        }
+
+        /* Formatiert alle leeren Eingabefelder */
+        input:empty {
+            background-color: lightpink;
+        }
+
+        /* Formatiert alle aktuelle Eingabefelder */
+        input:focus {
+            background-color: yellow;
+        }
+
+        /* Formatiert alle Eingabefelder mit gültigem Inhalt */
+        input:valid {
+            background-color: yellow;
+        }
+
+        /* Formatiert alle Eingabefelder mit ungültigem Inhalt */
+        input:invalid {
+            background-color: skyblue;
+        }
+
+        /* Wert außerhalb des gültigen Wertebereichs */
+        input:out-of-range {
+            background-color: tomato;
+        }
+        /* Wert innerhalb des gültigen Wertebereichs */
+        input:in-range {
+            background-color: lightgreen;
+        }
+        /* Formatiert den/die ausgewählten Radiobutton/checkboxen */
+        input:checked{
+            /* outline: 5px solid red; */
+        }
+        /* Formatiert ausgewählten Radiobutton  */
+        input[type="radio"]:checked{
+            /* outline: 5px dotted green; */
+        }
+        /* Formatiert das Label für den ausgewählten Radiobutton */
+        input[type="radio"]:checked+label{
+            /* outline: 5px dotted green; */
+            color: red;
+        }
+        /* Formatiert div-element entsprechend des lang-attribut wertes */
+        div:lang(fr){
+            border: 5px solid blue;
+            padding: 10px;
+            margin: 10px 0px;
+        }
+        div:lang(it){
+            border: 5px solid green;
+            padding: 10px;
+            margin: 10px 0px;
+        }
+        div:lang(es){
+            border: 5px solid red;
+            padding: 10px;
+            margin: 10px 0px;
+        }
+        div:lang(en){
+            border: 5px solid indigo;
+            padding: 10px;
+            margin: 10px 0px;
+        }
+        div:lang(de){
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div lang="en">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sed modi facere aliquid provident amet dignissimos veniam? Doloremque unde, doloribus laudantium iste cum blanditiis, fuga fugiat, dolorum id sed aliquam.</div>
+
+    <div lang="fr">Perspiciatis reprehenderit minus, magnam ullam harum, atque nam rem odio doloremque voluptas ut, sapiente at perferendis. Eos eligendi quo vitae amet odio, dicta velit explicabo, rerum quidem possimus deleniti consequuntur.</div>
+
+    <div>Nobis eaque possimus quos quod facere autem modi provident at iure nesciunt esse aspernatur quam recusandae aut quis voluptates, quasi vel nihil illum? Minus est iure sint, doloremque dolor maiores.</div>
+
+    <div lang="it">Cum obcaecati a facere quibusdam error sapiente laboriosam blanditiis, ratione, quidem iusto quaerat ullam harum eos repudiandae nam! Perspiciatis asperiores consequatur odio magni possimus ratione minima perferendis iure quibusdam nulla?</div>
+
+    <div lang="es">Voluptatibus reprehenderit rerum accusamus, laboriosam totam hic incidunt enim eum quisquam commodi iure molestiae, animi at perferendis voluptatem culpa harum nulla ab amet laborum corrupti maiores assumenda dolorum minima. Eum.</div>
+
+    <form>
+        <input type="text" placeholder="Vorname"><br><br>
+        <input type="text" placeholder="Nachname" required><br><br>
+        <input type="number" min="0" max="10"><br><br>
+<!-- (input:radio[name=geschlecht]+label)*3 -->
+        <input type="radio" name="geschlecht" id="Frau"><label for="Frau">Frau</label></input>
+        <input type="radio" name="geschlecht" id="Mann"><label for="Mann">Mann</label></input>
+        <input type="radio" name="geschlecht" id="Inter"><label for="Inter">Inter</label></input>
+    </form>
+    <p></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus deleniti eaque alias aspernatur possimus cumque
+        cum nesciunt aliquid quae fuga, esse quam blanditiis debitis ullam!</p>
+    <p>Accusantium harum odio soluta totam sed quas sequi, vel consequuntur exercitationem possimus quisquam. Atque
+        omnis unde non cumque vero neque, praesentium natus? Possimus, magni culpa.</p>
+    <p>Quia possimus nisi, laboriosam non saepe, adipisci voluptatum nihil eaque error molestias voluptate deserunt
+        inventore corporis iste vitae molestiae ex. Sapiente dignissimos eaque facere nostrum.</p>
+    <p>Magnam, odit fuga voluptatum aperiam veniam eveniet molestias odio. Assumenda cupiditate corporis consequuntur
+        quis! Vitae, hic nisi. Nisi optio sed laudantium ratione labore! Velit, reprehenderit!</p>
+    <p>Officia officiis, itaque enim, ducimus tempore non suscipit cupiditate hic explicabo aut optio quos aperiam
+        aliquid et voluptates reprehenderit. Laboriosam necessitatibus repudiandae modi reprehenderit velit.</p>
+    <p>Illo odio qui, esse architecto commodi fugit dolores omnis quis totam voluptates doloribus cumque aut quisquam,
+        at quidem? Expedita ipsa, earum odio quod repudiandae quasi.</p>
+    <p>Voluptatibus officia temporibus quos fuga quae quisquam, sequi deserunt repellat consequatur nihil, sit ullam,
+        eos cumque molestiae! Ex exercitationem explicabo tempora, aspernatur est accusamus aliquid?</p>
+    <p>Voluptatem est magni porro officia maiores et, perferendis iure ex facilis, commodi veniam quasi fugiat, iusto
+        veritatis amet molestias voluptate labore neque libero quaerat quia.</p>
+    <p>Animi maxime debitis enim cumque nulla fuga qui magni eligendi architecto consectetur, dolor, deserunt sed quasi
+        ducimus assumenda ex, dicta ipsa facere exercitationem non iste!</p>
+    <p>Quisquam eligendi itaque possimus natus omnis, in ut. Soluta nihil quas vero natus dolore numquam reiciendis,
+        maxime repellendus perspiciatis, repellat quod libero modi neque minima.</p>
+    <br>
+    <a href="https://www.stepstone.at/de" target="_blank" rel="noopener noreferrer">Zur Irgendeiner Webseite</a>
+</body>
+
+</html>
